@@ -8,7 +8,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "首页", link: "/" },
-      { text: "快速开始", link: "/main" },
+      { text: "快速开始", link: "/start" },
     ],
 
     sidebar: [

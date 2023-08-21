@@ -4,5 +4,5 @@
 
 后续会根据玩家反馈新增有意思的工具，欢迎加入解放碑晚礼礼分舵 qq 群 345713293 交流反馈。
 
-![qq群](./assets/qqgroup.jpg)
+<img width="400" src="./assets/qqgroup.jpg" />
 
