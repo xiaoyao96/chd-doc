@@ -37,4 +37,4 @@ jobs:
           REMOTE_DIR: chd-doc
           METHOD: ftp
           PORT: 21
-          ARGS: --delete
+          ARGS: --verbose
