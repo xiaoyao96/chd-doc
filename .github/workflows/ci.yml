@@ -1,0 +1,40 @@
+name: CI
+# 监听行为
+on:
+  #监听推代码
+  push:
+    #监听的分支名
+    branches: main
+# 工作流
+jobs:
+  # 工作名称
+  CI:
+    # github提供的服务器名
+    runs-on: ubuntu-latest
+    # 脚本步骤 每个横杆为一个步骤 按顺序执行
+    steps:
+      # 步骤名获取最新代码
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
+      # 安装node环境
+      - name: Use Node.js 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18.x"
+      - name: Installing Dependencies
+        run: npm install
+      # 部署前端工程
+      - name: Build Project
+        run: npm run docs:build
+      # ftp传输到云服务器
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@2.0.0
+        env:
+          FTP_SERVER: ${{ secrets.D_HOST }}
+          FTP_USERNAME: ${{ secrets.D_USER }}
+          FTP_PASSWORD: ${{ secrets.D_PASS }}
+          LOCAL_DIR: .vitepress/dist
+          REMOTE_DIR: chd-doc
+          METHOD: ftp
+          PORT: 21
+          ARGS: --delete
