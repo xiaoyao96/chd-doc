@@ -23,6 +23,13 @@ export default defineConfig({
           { text: "礼赞模拟器", link: "http://1.117.4.161:8181" },
         ],
       },
+      {
+        text: "其他",
+        items: [
+          { text: "等级补完自动购买", link: "/other/djbw" },
+          
+        ],
+      },
     ],
 
     // socialLinks: [
