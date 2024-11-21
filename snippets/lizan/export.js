@@ -59,7 +59,7 @@
     input.select();
     document.execCommand("copy");
     document.body.removeChild(input);
-    alert(``);
+    alert(`复制“${filename}”成功，请在合适位置粘贴`);
   }
 
   var isDownloading = false;
