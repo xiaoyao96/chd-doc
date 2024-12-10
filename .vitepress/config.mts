@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "chd-wind",
+  title: "彩虹前端的个人分享",
   description: "A VitePress Site",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -25,16 +25,18 @@ export default defineConfig({
       },
       {
         text: "其他",
-        items: [
-          { text: "等级补完自动购买", link: "/other/djbw" },
-          
-        ],
+        items: [{ text: "等级补完自动购买", link: "/other/djbw" }],
       },
     ],
+    footer: {
+      message:
+        'ICP备案号：<a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2023009525号-1</a>',
+        copyright: "©2024 chd-wind.cn"
+    },
 
     // socialLinks: [
     //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     // ]
   },
-  base: "/chd-doc/"
+  base: "/chd-doc/",
 });
