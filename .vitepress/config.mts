@@ -20,7 +20,7 @@ export default defineConfig({
         items: [
           { text: "礼赞自动抽取", link: "/lizan/main" },
           { text: "礼赞编码下载", link: "/lizan/code" },
-          { text: "礼赞模拟器", link: "http://1.117.4.161:8181" },
+          { text: "礼赞模拟器", link: "http://chd-wind.cn/chd-lizan/" },
         ],
       },
       {

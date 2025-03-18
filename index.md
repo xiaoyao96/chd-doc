@@ -20,5 +20,5 @@ features:
     link: /lizan/code
   - title: 礼赞模拟器
     details: 99%还原礼赞抽奖概率
-    link: http://1.117.4.161:8181
+    link: http://chd-wind.cn/chd-lizan/
 ---
